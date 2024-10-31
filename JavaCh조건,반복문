@@ -1,0 +1,45 @@
+[코드 실행 흐름 제어]
+1. 실행 흐름 : {}안에서 위부터 아래로 실행
+2. 흐름 제어문 : 개발자가 원하는 방향으로 바꿀 수 있도록 하는 것
+3. 루핑 : 반복문이 실행 완료된 경우 제어문 처음으로 다시 되돌아가 반복 실행
+
+[IF문]
+1. if문 : 조건식의 결과에 따라 블록실행 여부 결정
+2. 조건식에는 true 또는 false값을 산출할 수 있는 연산식이나 boolean변수가 옮
+3. true - 블록 실행 false - 블록실행 X
+4. if-else문 : true - if문 블록 실행 false - else 블록 실행
+
+[SWITCH문]
+1. switch문 : 괄호안의 변수 -> 해당 case로가서 실행
+2. case == 변수값 없으면 default로 가서 실행, default 생략 가능
+3. break - 다음 실행 X switch문 빠져나감
+4. break X - 다음 case 연달아 실행
+
+[FOR문]
+1. 실행문 여러번 반복 실행 - 코드 간결히 만들기
+2. 초기화식이 조건식 평가 -> true - 실행 , false - for문 종료 후 블록 스킵
+3. 모두 실행 후 - 증감식 실행
+4. 조건식 재평가 -> true - 3->4->2로 다시 실행, true X - for문 종료
+5. float(부동소수점 사용) 쓰지 않는다
+
+[WHILE문]
+1. true - 계속 반복, false - 반복 스탑 while문 종료
+2. 처음 실행 때 조건식 평가 - 결과:true 실행문 실행
+3. 실행문 모두 실행 후 - 조건식 재평가 true: 2->1진행, false: while문 종료
+4. 조건식에 true 사용 - 무한반복, while문 나가기 위한 코드 필요
+
+[DO-WHILE문]
+1. 블록 내부 실행 - 결과에 따라 반복실행 여부 결정
+2. while()뒤에 ;반드시 붙이기
+3. 처음 실행 때 실행문 우선 실행 - 모두 실행 후 조건식 평가
+4. 결과: true: 1->2 반복실행 false do-while문 종료
+
+[BREAK문]
+1. for, while, do-while문 실행 중ㅣ, switch문 종료
+2. 보통 if문과 사용, 조건식에 따라 for, while문 종료
+
+[COUNTINUE문]
+1. 반복문인 for, while, do-while에서만 사용
+2. 블록 내부 실행 시 for 증감식, while, do-while 조건식으로 바로 이동
+3. 계속 반복 수행
+4. 대개 if문과 사용, 특정 조건 만족시 continue문을 실행해서 다음반복으로 넘어감
